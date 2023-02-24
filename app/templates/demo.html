@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Toast Notification | CodingNepal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN link for icons -->
+
+  <link href="{% static 'css/demo.css' %}" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+  <ul class="notifications"></ul>
+
+  <script src="{% static 'js/demo.js' %}"></script>
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>
